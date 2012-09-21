@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
 	pageEncoding="utf-8"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
+①引入标签的声明
 <html>
 <head>
 <style>
@@ -22,7 +23,7 @@
 	<h2>Customer SignUp Form - JSR303 @Valid example</h2>
 
 	<form:form method="POST" commandName="customer"
-		action="customer/signup">
+		action="/springmvc/mvc/customer/signup">
 		<form:errors path="*" cssClass="errorblock" element="div" />
 		<table>
 			<tr>
